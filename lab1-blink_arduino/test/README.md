@@ -13,11 +13,19 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        // Generate a lettre `A` Morse code
-        
+        //display dot blink
+        digitalWrite(LED_GREEN, HIGH);
+        _delay_ms(250);
+        digitalWrite(LED_GREEN, LOW);
+        _delay_ms(250);
 
-        // WRITE YOUR CODE HERE
+        //display comma blink
+        digitalWrite(LED_GREEN, HIGH);
+        _delay_ms(750);
+        digitalWrite(LED_GREEN, LOW);
 
+        // delay between 2 letters is same as dash delay
+        _delay_ms(750);
     }
 
     // Will never reach this
