@@ -8,21 +8,21 @@
 int main(void)
 {
     // Set pin where on-board LED is connected as output
-    pinMode(LED_GREEN, OUTPUT);
+    pinMode(LED_RED, OUTPUT);
 
     // Infinite loop
     while (1)
     {
         //display dot blink
-        digitalWrite(LED_GREEN, LOW);
+        digitalWrite(LED_RED, HIGH);
         _delay_ms(250);
-        digitalWrite(LED_GREEN, HIGH);
+        digitalWrite(LED_RED, LOW);
         _delay_ms(250);
 
         //display comma blink
-        digitalWrite(LED_GREEN, LOW);
+        digitalWrite(LED_RED, HIGH);
         _delay_ms(750);
-        digitalWrite(LED_GREEN, HIGH);
+        digitalWrite(LED_RED, LOW);
         _delay_ms(750);
     }
 
