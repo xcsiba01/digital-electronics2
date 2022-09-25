@@ -37,4 +37,4 @@ LED active high:
 
    ![your figure](circuit.PNG)
    
-   ![your figure](circuit_2.PNG)
+   ![your figure](circuit_1.PNG)
