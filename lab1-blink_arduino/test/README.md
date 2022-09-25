@@ -1,4 +1,4 @@
-# Lab 1: YOUR_FIRSTNAME LASTNAME
+# Lab 1: HAJNALKA CSIBA
 
 ### Morse code
 
@@ -32,6 +32,8 @@ int main(void)
 ```
 
 2. Scheme of Morse code application, i.e. connection of AVR device, LED, resistor, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
+
+LED active high: 
 
    ![your figure](circuit.PNG)
    
