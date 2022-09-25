@@ -14,17 +14,15 @@ int main(void)
     while (1)
     {
         //display dot blink
-        digitalWrite(LED_GREEN, HIGH);
-        _delay_ms(250);
         digitalWrite(LED_GREEN, LOW);
+        _delay_ms(250);
+        digitalWrite(LED_GREEN, HIGH);
         _delay_ms(250);
 
         //display comma blink
-        digitalWrite(LED_GREEN, HIGH);
-        _delay_ms(750);
         digitalWrite(LED_GREEN, LOW);
-
-        // delay between 2 letters is same as dash delay
+        _delay_ms(750);
+        digitalWrite(LED_GREEN, HIGH);
         _delay_ms(750);
     }
 
