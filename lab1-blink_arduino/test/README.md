@@ -13,13 +13,13 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        //display dot blink
+        //dot blink
         digitalWrite(LED_RED, HIGH);
         _delay_ms(250);
         digitalWrite(LED_RED, LOW);
         _delay_ms(250);
 
-        //display comma blink
+        //comma blink
         digitalWrite(LED_RED, HIGH);
         _delay_ms(750);
         digitalWrite(LED_RED, LOW);
