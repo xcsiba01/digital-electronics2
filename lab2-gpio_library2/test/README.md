@@ -8,8 +8,8 @@
    | :-: | :-: | :-: | :-: | :-- |
    | 0 | 0 | input | no | Tri-state, high-impedance |
    | 0 | 1 | input | yes | -- |
-   | 1 | 0 | output | -- | 0 |
-   | 1 | 1 | output | -- | 1 |
+   | 1 | 0 | output | no | Low output (0) |
+   | 1 | 1 | output | no | High output (1) |
 
 ### GPIO library
 
