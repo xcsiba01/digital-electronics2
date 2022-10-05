@@ -7,7 +7,7 @@
    | **DDRB** | **PORTB** | **Direction** | **Internal pull-up resistor** | **Description** |
    | :-: | :-: | :-: | :-: | :-- |
    | 0 | 0 | input | no | Tri-state, high-impedance |
-   | 0 | 1 | input | yes | Pull-up activation |
+   | 0 | 1 | input | yes | Pull-up resistor activation |
    | 1 | 0 | output | no | Low output (0) |
    | 1 | 1 | output | no | High output (1) |
 
