@@ -1,4 +1,4 @@
-# Lab 6: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
+# Lab 6: Hajnalka Csiba
 
 ### ASCII
 
@@ -14,8 +14,8 @@
    | `2` | 50 | 0x32 | `0b0011_0010` |
    | `Esc` | 27 | 0x1b | `0b0001_1011` |
    | `Space` | 32 | 0x20 | `0b0010_0000` |
-   | `Tab` | 9 | 0x9 | `0b0000_1001` |
-   | `Backspace` | 8 | 0x8 | `0b0000_1000` |
+   | `Tab` | 9 | 0x09 | `0b0000_1001` |
+   | `Backspace` | 8 | 0x08 | `0b0000_1000` |
    | `Enter` | 13 | 0x0d | `0b0000_1101` |
 
 ### UART communication
