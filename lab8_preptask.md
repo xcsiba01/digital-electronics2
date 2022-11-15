@@ -12,7 +12,7 @@
    | `eor Rd, Rr` | Rd = Rd xor Rr | Logical EOR between the contents of register Rd and register Rr and places the result in the destination register Rd | 1 |
    | `mul Rd, Rr` | R1:R0 = Rd x Rr | Performs 8-bit x 8-bit = 16-bit unsigned multiplication | 1 |
    | `pop Rd` | Rd = STACK | Loads register Rd with a byte from STACK (stack pointer is pre-incremented by 1 before the POP) | 1 |
-   | `push Rr` | STACK = Rr | Stores the contents of register Rr on the STACK (stack pointer is pre-incremented by 1 after the PUSH) | 1 |
-   | `ret` | PC(15:0) = STACK / PC(21:0) = STACK | Returns from the subroutine, the return adress is loaded from STACK (stack pointer is pre-incremented shceme durinf RET) | 2 / 3 |
+   | `push Rr` | STACK = Rr | Stores the contents of register Rr on the STACK. The stack pointer is pre-incremented by 1 after the PUSH. | 1 |
+   | `ret` | PC(15:0) = STACK / PC(21:0) = STACK | Returns from the subroutine, the return adress is loaded from STACK. The stack pointer is pre-incremented shceme durinf RET) | 2 / 3 |
    | `rol Rd` |  | Shifts all bits in Rd one place to the left | 1 |
    | `ror Rd` |  | Shifts all bits in Rd one place to the right | 1 |
