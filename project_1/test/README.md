@@ -52,29 +52,29 @@ Schematic of the implementation:
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
 | +5V | Positive Power Supply | +5V |
-| VRx | ADC channel | PC1 |
-| VRy | ADC channel | PC0 |
-| SW | Push Button | PD3 |
+| VRx | ADC channel | A1 (PC1) |
+| VRy | ADC channel | A0 (PC0) |
+| SW | Push Button | D3 (PD3) |
 
 | **Rotary encoder pin** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
-| CLK | Digital Input (Push Button) | PD2 |
-| DT | Analog Input | PC2 |
-| SW | Analog Input | PC3 |
+| CLK | Digital Input (Push Button) | D2 (PD2) |
+| DT | Analog Input | A2 (PC2) |
+| SW | Analog Input | A3 (PC3) |
 | + | Positive Power Supply | +5V |
 | GND | Power Supply Ground | GND |
 
 | **Digilent PmodCLP LCD pin** | **Signal** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: | :-: |
-| 7 (J1 - Bottom Half) | DB4 | Data Bit 4 | PD4 |
-| 8 (J1 - Bottom Half) | DB5 | Data Bit 5 | PD5 |
-| 9 (J1 - Bottom Half) | DB6 | Data Bit 6 | PD6 |
-| 10 (J1 - Bottom Half) | DB7 | Data Bit 7 | PD7 |
+| 7 (J1 - Bottom Half) | DB4 | Data Bit 4 | D4 (PD4) |
+| 8 (J1 - Bottom Half) | DB5 | Data Bit 5 | D5 (PD5) |
+| 9 (J1 - Bottom Half) | DB6 | Data Bit 6 | D6 (PD6) |
+| 10 (J1 - Bottom Half) | DB7 | Data Bit 7 | D7 (PD7) |
 | 11 (J1 - Bottom Half) | GND | Power Supply Ground | GND |
 | 12 (J1 - Bottom Half) | VCC | Positive Power Supply | +5V |
-| 1 (J2) | RS | Register Select | PB0 |
+| 1 (J2) | RS | Register Select | D8 (PB0) |
 | 2 (J2) | R/W | Read/Write Signal | GND |
-| 3 (J2) | E | Read/Write Enable | PB1 |
+| 3 (J2) | E | Read/Write Enable | D9 (PB1) |
 
 
 
