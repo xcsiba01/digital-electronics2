@@ -19,6 +19,7 @@
 #include <lcd.h>            // Peter Fleury's LCD library
 #include <stdlib.h>         // C library. Needed for number conversions
 #include <uart.h>
+
 #define BTN 3
 #define BTN_p 3
 #define DATA 2
@@ -80,8 +81,6 @@ int main(void)
 
     //GPIO_mode_input_pullup(&DDRC, DATA);
     //GPIO_mode_input_pullup(&DDRD, CLK);
-
-    
 
     // Enables interrupts by setting the global interrupt mask
     sei();
@@ -148,15 +147,13 @@ ISR(TIMER1_OVF_vect)
     B_prev = B_curr;
     A_prev = A_curr;
 
-
-
 }
-
 
 /**********************************************************************
  * Function: ADC complete interrupt
  * Purpose:  Display converted value on LCD screen.
  **********************************************************************/
+
 ISR(ADC_vect)
 {
     static uint8_t kanal = 0;
@@ -196,7 +193,6 @@ ISR(ADC_vect)
         lcd_puts(string);
         kanal = 0;
     }
-
     
     sw = GPIO_read(&PIND, BTN);
     itoa(sw, string, 10);
@@ -207,6 +203,5 @@ ISR(ADC_vect)
     itoa(sw_p, string, 10);
     lcd_gotoxy(0, 1); 
     lcd_puts(string);
-
 
 }
