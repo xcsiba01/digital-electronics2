@@ -88,6 +88,4 @@ Insert a link to a short video with your practical implementation example (1-3 m
 
 ## References
 
-1. Write your text here.
-2. ...
-https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1
+1.https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1
