@@ -18,7 +18,11 @@
 #include "timer.h"          // Timer library for AVR-GCC
 #include <lcd.h>            // Peter Fleury's LCD library
 #include <stdlib.h>         // C library. Needed for number conversions
-
+#include <uart.h>
+#define BTN 3
+#define BTN_p 3
+#define DATA 2
+#define CLK 2
 
 /* Function definitions ----------------------------------------------*/
 /**********************************************************************
@@ -29,6 +33,12 @@
  **********************************************************************/
 int main(void)
 {
+    uart_init(UART_BAUD_SELECT(9600, F_CPU));
+    DDRC &= ~(1<<DATA);
+    DDRD &= ~(1<<CLK);
+    PORTC &= ~(1<<DATA);
+    PORTD &= ~(1<<CLK);
+
     // Initialize display
     lcd_init(LCD_DISP_ON);
     lcd_gotoxy(1, 0); lcd_puts("value:");
@@ -62,7 +72,16 @@ int main(void)
     TIM1_overflow_33ms();
     TIM1_overflow_interrupt_enable();
 
+    GPIO_mode_input_pullup(&DDRD, BTN);
+    GPIO_mode_input_pullup(&DDRC, BTN_p);
 
+    //TIM0_overflow_16ms();
+    //TIM1_overflow_interrupt_enable();
+
+    //GPIO_mode_input_pullup(&DDRC, DATA);
+    //GPIO_mode_input_pullup(&DDRD, CLK);
+
+    
 
     // Enables interrupts by setting the global interrupt mask
     sei();
@@ -84,10 +103,14 @@ int main(void)
  * Function: Timer/Counter1 overflow interrupt
  * Purpose:  Use single conversion mode and start conversion every 100 ms.
  **********************************************************************/
+
 ISR(TIMER1_OVF_vect)
 {
     // Start ADC conversion
     static uint8_t kanal = 0;
+    static uint8_t A_curr, B_curr, A_prev, B_prev;
+    char string[1];
+
     if (kanal == 0)
     {
          ADMUX &= ~((1<<MUX3) | (1<<MUX2) | (1<<MUX1) | (1<<MUX0));
@@ -101,7 +124,34 @@ ISR(TIMER1_OVF_vect)
     }
 
     ADCSRA |= (1<<ADSC);
-}    
+
+
+    A_curr = GPIO_read(&PINC, DATA);
+    B_curr = GPIO_read(&PIND, CLK);
+
+    if(A_curr == A_prev)
+    {
+        if(B_curr != B_prev)
+        {
+            uart_puts("1");
+            uart_puts("\r\n");
+        }
+    }
+    else if(B_curr == B_prev)
+    {
+        if(A_curr != A_prev)
+        {
+            uart_puts("0");
+            uart_puts("\r\n");
+        }
+    }
+    B_prev = B_curr;
+    A_prev = A_curr;
+
+
+
+}
+
 
 /**********************************************************************
  * Function: ADC complete interrupt
@@ -110,7 +160,7 @@ ISR(TIMER1_OVF_vect)
 ISR(ADC_vect)
 {
     static uint8_t kanal = 0;
-    uint16_t value;
+    uint16_t value, sw, sw_p;
     char string[4];  // String for converted numbers by itoa()
 
     // Read converted value
@@ -146,6 +196,17 @@ ISR(ADC_vect)
         lcd_puts(string);
         kanal = 0;
     }
+
+    
+    sw = GPIO_read(&PIND, BTN);
+    itoa(sw, string, 10);
+    lcd_gotoxy(0, 0); 
+    lcd_puts(string);
+
+    sw_p = GPIO_read(&PINC, BTN_p);
+    itoa(sw_p, string, 10);
+    lcd_gotoxy(0, 1); 
+    lcd_puts(string);
 
 
 }

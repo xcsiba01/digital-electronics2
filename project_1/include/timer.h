@@ -63,8 +63,7 @@
  * @name  Definitions for 8-bit Timer/Counter0
  * @note  t_OVF = 1/F_CPU * prescaler * 2^n where n = 8, F_CPU = 16 MHz
  */
-// WRITE YOUR CODE HERE
-
+// WRITE YOUR CODE HERE test
 
 /**
  * @name  Definitions for 8-bit Timer/Counter2
