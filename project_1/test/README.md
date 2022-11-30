@@ -64,14 +64,14 @@ Schematic of the implementation:
 | + | Positive Power Supply | +5V |
 | GND | Power Supply Ground | GND |
 
-| **Digilent Pmod CLP LCD pin** | **Signal** | **Description** | **Arduino uno pin** |
+| **Digilent PmodCLP LCD pin** | **Signal** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: | :-: |
-| 7 (J1) | DB4 | Data Bit 4 | PD4 |
-| 8 (J1) | DB5 | Data Bit 5 | PD5 |
-| 9 (J1) | DB6 | Data Bit 6 | PD6 |
-| 10 (J1) | DB7 | Data Bit 7 | PD7 |
-| 11 (J1) | GND | Power Supply Ground | GND |
-| 12 (J1) | VCC | Positive Power Supply | +5V |
+| 7 (J1 - Bottom Half) | DB4 | Data Bit 4 | PD4 |
+| 8 (J1 - Bottom Half) | DB5 | Data Bit 5 | PD5 |
+| 9 (J1 - Bottom Half) | DB6 | Data Bit 6 | PD6 |
+| 10 (J1 - Bottom Half) | DB7 | Data Bit 7 | PD7 |
+| 11 (J1 - Bottom Half) | GND | Power Supply Ground | GND |
+| 12 (J1 - Bottom Half) | VCC | Positive Power Supply | +5V |
 | 1 (J2) | RS | Register Select | PB0 |
 | 2 (J2) | R/W | Read/Write Signal | GND |
 | 3 (J2) | E | Read/Write Enable | PB1 |
