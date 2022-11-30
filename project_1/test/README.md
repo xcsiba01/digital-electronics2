@@ -12,7 +12,7 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 * The source code for the AVR must be written in C and/or Assembly and must be implementable on Arduino Uno board using toolchains from the semester. No other development tools are allowed.
 
-## Recommended GitHub repository structure
+## GitHub repository structure
 
    ```c
    YOUR_PROJECT        // PlatfomIO project
@@ -24,9 +24,6 @@ The goal of the project is cooperation in pairs, further study of the topic, des
    ├── platformio.ini  // Project Configuration File
    └── README.md       // Report of this project
    ```
-
-## Recommended README.md file structure
-
 ### Team members
 
 * Member 1 (responsible for xxx)
