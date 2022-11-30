@@ -58,7 +58,7 @@ Schematic of the implementation:
 
 | **Rotary encoder pin** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
-| CLK | Digital Input | PD2 |
+| CLK | Digital Input (Push Button) | PD2 |
 | DT | Analog Input | PC2 |
 | SW | Analog Input | PC3 |
 | + | Positive Power Supply | +5V |
