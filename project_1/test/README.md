@@ -48,7 +48,7 @@ Schematic of the implementation:
 
 ![your figure](schema.png)
 
-| **Joystick pin** | **Description** | **Arduino uno pin** |
+| **Joystick pin** | **Description** | **Arduino uno port** |
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
 | +5V | Positive Power Supply | +5V |
@@ -56,7 +56,7 @@ Schematic of the implementation:
 | VRy | ADC channel | PC0 |
 | SW | Push Button | PD3 |
 
-| **Rotary encoder pin** | **Description** | **Arduino uno pin** |
+| **Rotary encoder pin** | **Description** | **Arduino uno port** |
 | :-: | :-: | :-: |
 | CLK | Digital Input (Push Button) | PD2 |
 | DT | Analog Input | PC2 |
@@ -64,7 +64,7 @@ Schematic of the implementation:
 | + | Positive Power Supply | +5V |
 | GND | Power Supply Ground | GND |
 
-| **Digilent PmodCLP LCD pin** | **Signal** | **Description** | **Arduino uno pin** |
+| **Digilent PmodCLP LCD pin** | **Signal** | **Description** | **Arduino uno port** |
 | :-: | :-: | :-: | :-: |
 | 7 (J1 - Bottom Half) | DB4 | Data Bit 4 | PD4 |
 | 8 (J1 - Bottom Half) | DB5 | Data Bit 5 | PD5 |
