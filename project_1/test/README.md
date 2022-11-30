@@ -49,7 +49,7 @@ Schematic of the implementation:
 ![your figure](schema.png)
 
 | **Joystick pin** | **Description** | **Arduino uno pin** |
-| :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
 | +5V | Positive Power Supply | +5V |
 | VRx | ADC channel | PC1 |
@@ -57,7 +57,7 @@ Schematic of the implementation:
 | SW | Push Button | PD3 |
 
 | **Rotary encoder pin** | **Description** | **Arduino uno pin** |
-| :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: |
 | CLK | Digital Input | PD2 |
 | DT | Analog Input | PC2 |
 | SW | Analog Input | PC3 |
