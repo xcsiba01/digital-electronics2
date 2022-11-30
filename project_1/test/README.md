@@ -44,8 +44,39 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 ## Hardware description
 
-Insert descriptive text and schematic(s) of your implementation.
+Schematic of the implementation:
+
 ![your figure](schema.png)
+
+| **Joystick pin** | **Description** | **Arduino uno pin** |
+| :-: | :-: | :-: | :-: |
+| GND | Power Supply Ground | GND |
+| +5V | Positive Power Supply | +5V |
+| VRx | ADC channel | PC1 |
+| VRy | ADC channel | PC0 |
+| SW | Push Button | PD3 |
+
+| **Rotary encoder pin** | **Description** | **Arduino uno pin** |
+| :-: | :-: | :-: | :-: |
+| CLK | Digital Input | PD2 |
+| DT | Analog Input | PC2 |
+| SW | Analog Input | PC3 |
+| + | Positive Power Supply | +5V |
+| GND | Power Supply Ground | GND |
+
+| **Digilent Pmod CLP LCD pin** | **Signal** | **Description** | **Arduino uno pin** |
+| :-: | :-: | :-: | :-: |
+| 7 (J1) | DB4 | Data Bit 4 | PD4 |
+| 8 (J1) | DB5 | Data Bit 5 | PD5 |
+| 9 (J1) | DB6 | Data Bit 6 | PD6 |
+| 10 (J1) | DB7 | Data Bit 7 | PD7 |
+| 11 (J1) | GND | Power Supply Ground | GND |
+| 12 (J1) | VCC | Positive Power Supply | +5V |
+| 1 (J2) | RS | Register Select | PB0 |
+| 2 (J2) | R/W | Read/Write Signal | GND |
+| 3 (J2) | E | Read/Write Enable | PB1 |
+
+
 
 ## Software description
 
