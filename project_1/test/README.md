@@ -45,6 +45,7 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 ## Hardware description
 
 Insert descriptive text and schematic(s) of your implementation.
+![your figure](schema.png.PNG)
 
 ## Software description
 
