@@ -37,9 +37,9 @@ The goal of the project is cooperation in pairs, further study of the topic, des
    ├── src                // Source file
    │   └── main.c
    ├── test
-   │   │   └── README.md // Report of this project
-   ├── platformio.ini  // Project Configuration File
-   └── README.md       
+   │   └── README.md // Report of this project
+   └── platformio.ini  // Project Configuration File
+         
    ```
 
 ## Hardware description
