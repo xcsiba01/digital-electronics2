@@ -109,8 +109,9 @@ A short video with the practical implementation example of this project is avail
 ## References
 
 1. [Pmod CLP Reference Manual](https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1)
-2. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/02-gpio
-3. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/03-interrupts
-4. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/04-lcd
-5. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/05-adc
-6. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/06-uart
+2. [Arduino Uno Pinout](https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins)
+3. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/02-gpio
+4. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/03-interrupts
+5. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/04-lcd
+6. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/05-adc
+7. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/06-uart
