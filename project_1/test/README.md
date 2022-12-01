@@ -77,7 +77,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 | 2 (J2) | R/W | Read/Write Signal | GND |
 | 3 (J2) | E | Read/Write Enable | D9 (PB1) |
 
-<a name="sofware"></a>
+<a name="software"></a>
 
 ## Software description
 
