@@ -75,6 +75,11 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 #### Source file
 
 * [main.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/src/main.c)
+* * In the main code we used two algorithms: ´ADC_vect´ and ´TIMER1_OVF_vect´. The flowcharts of the algorihms are as follows:
+
+![TIMER_OVF_vect](TIMER_OVF_vect.png)
+
+![ADC_vect](ADC_vect.png)
 
 #### Library `gpio`
 
@@ -114,14 +119,6 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 
 * [timer.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/include/timer.h)
 * The library contains macros for controlling the timer modules.
-
-#### Flowcharts of the algorithms:
-
-![TIMER_OVF_vect]()
-
-![ADC_vect]()
-
-Write descriptive text of your libraries and source files.
 
 ## Video
 
