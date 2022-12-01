@@ -81,6 +81,14 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 
 ![ADC_vect](ADC_vect.png)
 
+* We used single conversion mode and started the AD conversion every 33 ms by Timer/Counter1 overflow.
+* When the analog to digital conversion is finished, the value of the deviation value (0-1023) of the joystick is read and displayed in decimal at the LCD display. Then this value is also displayed in hexadecimal.
+* The values are converted into a string with function `itoa`.
+
+| **Return** | **Function name** | **Function parameters** | **Description** |
+| :-: | :-- | :-- | :-- |
+| `char *` | `itoa` | ` int value, char * str, int base ` | Convert int data type to string data type |
+
 #### Library `gpio`
 
 * [gpio.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.c)
