@@ -44,7 +44,7 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 ## Hardware description
 
-Schematic of the implementation:
+#### Schematic of the implementation:
 
 ![your figure](schema.png)
 
@@ -80,12 +80,19 @@ Schematic of the implementation:
 
 ## Software description
 
-Put flowchats of your algorithm(s). Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
+#### Flowcharts of the algorithms:
+
+Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
 
 ## Video
 
-Insert a link to a short video with your practical implementation example (1-3 minutes, e.g. on YouTube).
+A short video with the practical implementation example of this project is available right [here](https://www.youtube.com/watch?v=BsZNbVuyCBM).
 
 ## References
 
 1. [Pmod CLP Reference Manual](https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1)
+2. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/02-gpio
+3. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/03-interrupts
+4. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/04-lcd
+5. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/05-adc
+6. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/06-uart
