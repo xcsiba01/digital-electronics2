@@ -80,10 +80,11 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 * [gpio.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.h)
 * The used GPIO library functions:
 
-      | **Return** | **Function name** | **Function parameters** | **Description** |
-      | :-: | :-- | :-- | :-- |
-      | `void` | `GPIO_mode_input_pullup` | `volatile uint8_t *reg, uint8_t pin` | Configure one input pin and enable pull-up resistor |
-      | `uint8_t` | `GPIO_read` | `volatile uint8_t *reg, uint8_t pin` | Read a value from input pin |
+
+| **Return** | **Function name** | **Function parameters** | **Description** |
+| :-: | :-- | :-- | :-- |
+| `void` | `GPIO_mode_input_pullup` | `volatile uint8_t *reg, uint8_t pin` | Configure one input pin and enable pull-up resistor |
+| `uint8_t` | `GPIO_read` | `volatile uint8_t *reg, uint8_t pin` | Read a value from input pin |
 
 #### Library `lcd`
 
