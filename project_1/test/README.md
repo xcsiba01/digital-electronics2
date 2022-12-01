@@ -78,8 +78,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 * [gpio.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.c)
 * [gpio.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.h)
-* The used GPIO library functions:
-
+* GPIO library functions used in this project:
 
 | **Return** | **Function name** | **Function parameters** | **Description** |
 | :-: | :-- | :-- | :-- |
@@ -91,15 +90,28 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 * [lcd.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd.c)
 * [lcd.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd.h)
 * [lcd_definitions.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd_definitions.h)
+* LCD library functions used in this project:
+
+| **Return** | **Function name** | **Function parameters** | **Description** |
+| :-: | :-- | :-- | :-- |
+| `void` | `lcd_init` | `uint8_t dispAttr` | Initialize display and select type of cursor |
+| `void` | `lcd_gotoxy` | `uint8_t x, uint8_t y` | Set cursor to specified position |
+| `void` | `lcd_puts` | `const char *s` | Display string without auto linefeed |
 
 #### Library `uart`
 
 * [uart.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/uart/uart.c)
 * [uart.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/uart/uart.h)
+* UART library functions used in this project:
+
+| **Return** | **Function name** | **Function parameters** | **Description** |
+| :-: | :-- | :-- | :-- |
+| `void` | `uart_puts` | `const char *s` | Transmit string to UART |
 
 #### Library `timer.h`
 
 * [timer.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/include/timer.h)
+* The library contains macros for controlling the timer modules.
 
 #### Flowcharts of the algorithms:
 
