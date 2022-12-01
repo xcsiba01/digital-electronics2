@@ -7,6 +7,16 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 * Josef Kaplan (responsible for code, documentation, schematic)
 * Hajnalka Csiba (responsible for code, github repository, flowcharts)
 
+### Table of contents
+
+* [GitHub repository structure](#github)
+* [Hardware description](#hardware)
+* [Software description](#software)
+* [Video](#video)
+* [References](#references)
+
+<a name="github"></a>
+
 ## GitHub repository structure
 
    ```c
@@ -31,6 +41,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
    └── platformio.ini   // Project Configuration File
          
    ```
+<a name="hardware"></a>
 
 ## Hardware description
 
@@ -66,7 +77,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 | 2 (J2) | R/W | Read/Write Signal | GND |
 | 3 (J2) | E | Read/Write Enable | D9 (PB1) |
 
-
+<a name="sofware"></a>
 
 ## Software description
 
@@ -130,9 +141,13 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 * [timer.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/include/timer.h)
 * The library contains macros for controlling the timer modules.
 
+<a name="video"></a>
+
 ## Video
 
 A short video with the practical implementation example of this project is available right [here](https://www.youtube.com/watch?v=BsZNbVuyCBM).
+
+<a name="references"></a>
 
 ## References
 
