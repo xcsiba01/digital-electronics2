@@ -93,8 +93,12 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 #### Library `uart`
 
-*
-*
+* [uart.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/uart/uart.c)
+* [uart.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/uart/uart.h)
+
+#### Library `timer.h`
+
+* [timer.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/include/timer.h)
 
 #### Flowcharts of the algorithms:
 
