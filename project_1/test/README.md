@@ -86,7 +86,7 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 #### Source file
 
 * [main.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/src/main.c)
-* In the `main.c` code we used two algorithms: `ADC_vect` and `TIMER1_OVF_vect`. The flowcharts of the algorihms are as follows:
+* In the `main.c` code we used two algorithms: `ADC_vect` and `TIMER1_OVF_vect`. The flowcharts of the algorithms are as follows:
 
 ![TIMER_OVF_vect](TIMER_OVF_vect.png)
 
