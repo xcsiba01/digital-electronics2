@@ -89,6 +89,8 @@ To write the source file, we used the code from lab exercise 5 (lab5-adc) as a t
 | :-: | :-- | :-- | :-- |
 | `char *` | `itoa` | ` int value, char * str, int base ` | Convert int data type to string data type |
 
+* If the button of the joystick or the encoder is pushed, the value (on the display position [0,0] resp. [0,1]) changes from 1 to 0. The analog inputs `BTN` and `BTN_p` are read with `GPIO_read` function.
+
 #### Library `gpio`
 
 * [gpio.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.c)
