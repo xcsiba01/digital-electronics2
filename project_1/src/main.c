@@ -76,9 +76,6 @@ int main(void)
     GPIO_mode_input_pullup(&DDRD, BTN);
     GPIO_mode_input_pullup(&DDRC, BTN_p);
 
-    //TIM0_overflow_16ms();
-    //TIM1_overflow_interrupt_enable();
-
     //GPIO_mode_input_pullup(&DDRC, DATA);
     //GPIO_mode_input_pullup(&DDRD, CLK);
 
@@ -113,12 +110,10 @@ ISR(TIMER1_OVF_vect)
     if (kanal == 0)
     {
          ADMUX &= ~((1<<MUX3) | (1<<MUX2) | (1<<MUX1) | (1<<MUX0));
-         //ADMUX &= ~((1<<MUX3) | (1<<MUX2) | (1<<MUX0)); ADMUX |= (1<<MUX1);     
          kanal = 1; 
     }
     else {
         ADMUX &= ~((1<<MUX3) | (1<<MUX2) | (1<<MUX1) ); ADMUX |= (1<<MUX0); 
-        //ADMUX &= ~((1<<MUX3) | (1<<MUX2)) ; ADMUX |= ((1<<MUX0) | (1<<MUX1));
         kanal = 0;
     }
 
