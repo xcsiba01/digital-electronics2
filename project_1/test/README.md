@@ -80,6 +80,22 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 ## Software description
 
+#### Library `gpio`
+
+* [gpio.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.c)
+* [gpio.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/gpio/gpio.h)
+
+#### Library `lcd`
+
+* [lcd.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd.c)
+* [lcd.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd.h)
+* [lcd_definitions.h](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/lib/lcd/lcd_definitions.h)
+
+#### Library `uart`
+
+*
+*
+
 #### Flowcharts of the algorithms:
 
 Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
