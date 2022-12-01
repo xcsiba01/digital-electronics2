@@ -24,7 +24,7 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
    │   └── uart
    │       ├── uart.c
    │       └── uart.h
-   ├── src                // Source file
+   ├── src              // Source file
    │   └── main.c
    ├── test
    │   └── README.md    // Report of this project
