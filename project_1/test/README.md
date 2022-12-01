@@ -108,10 +108,11 @@ A short video with the practical implementation example of this project is avail
 
 ## References
 
-1. [Pmod CLP Reference Manual](https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1)
+1. [PmodCLP Reference Manual](https://digilent.com/reference/pmod/pmodclp/reference-manual?redirect=1)
 2. [Arduino Uno Pinout](https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins)
-3. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/02-gpio
-4. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/03-interrupts
-5. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/04-lcd
-6. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/05-adc
-7. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/06-uart
+3. [Rotary Encoder](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/)
+4. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/02-gpio
+5. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/03-interrupts
+6. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/04-lcd
+7. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/05-adc
+8. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/06-uart
