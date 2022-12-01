@@ -82,7 +82,7 @@ The goal of the project is cooperation in pairs, further study of the topic, des
 
 #### Source file
 
-* [src.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/src/main.c)
+* [main.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/src/main.c)
 
 #### Library `gpio`
 
