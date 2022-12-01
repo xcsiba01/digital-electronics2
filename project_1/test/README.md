@@ -96,6 +96,10 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 #### Flowcharts of the algorithms:
 
+![TIMER_OVF_vect]()
+
+![ADC_vect]()
+
 Write descriptive text of your libraries and source files. Put direct links to these files in `src` or `lib` folders.
 
 ## Video
