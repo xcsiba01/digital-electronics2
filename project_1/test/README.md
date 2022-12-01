@@ -70,6 +70,8 @@ Application of analog joy-stick (2 ADC channels, 1 push button), rotary encoder,
 
 ## Software description
 
+To write the source file, we used the code from lab exercise 5 (lab5-adc) as a template and extended it. The libraries that we used in this project were copied from previous labs.
+
 #### Source file
 
 * [main.c](https://github.com/xcsiba01/digital-electronics2/blob/main/project_1/src/main.c)
