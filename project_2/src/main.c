@@ -14,19 +14,19 @@
 /* Includes ----------------------------------------------------------*/
 #include <avr/io.h>         // AVR device-specific IO definitions
 #include <avr/interrupt.h>  // Interrupts standard C library for AVR-GCC
+#include <util/delay.h> // Functions for busy-wait delay loops
+#include "Arduino.h"
 #include <gpio.h>           // GPIO library for AVR-GCC
 #include "timer.h"          // Timer library for AVR-GCC
 #include <lcd.h>            // Peter Fleury's LCD library
 #include <stdlib.h>         // C library. Needed for number conversions
 #include <uart.h>
-<<<<<<< HEAD
-=======
 
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
 #define BTN 3
 #define BTN_p 3
 #define DATA 2
 #define CLK 2
+#define PWM 10
 
 /* Function definitions ----------------------------------------------*/
 /**********************************************************************
@@ -50,6 +50,23 @@ int main(void)
     lcd_gotoxy(8, 0); lcd_puts("a");  // Put ADC value in decimal
     lcd_gotoxy(13,0); lcd_puts("b");  // Put ADC value in hexadecimal
     lcd_gotoxy(8, 1); lcd_puts("c");  // Put button name here
+
+   void setup(); {
+    pinMode(PWM, OUTPUT);
+  }
+  
+    void loop(); 
+  //{
+    //for(int i=0; i<1023; i++){
+      analogWrite(PWM, 0);
+      delay(2000);
+    //}
+
+    //for(int i=1023; i>0; i--){
+      analogWrite(PWM, 90);
+      delay(2000);
+    //}
+  //}
 
     // Configure Analog-to-Digital Convertion unit
     // Select ADC voltage reference to "AVcc with external capacitor at AREF pin"
@@ -79,18 +96,8 @@ int main(void)
     GPIO_mode_input_pullup(&DDRD, BTN);
     GPIO_mode_input_pullup(&DDRC, BTN_p);
 
-<<<<<<< HEAD
-    //TIM0_overflow_16ms();
-    //TIM1_overflow_interrupt_enable();
-
     //GPIO_mode_input_pullup(&DDRC, DATA);
     //GPIO_mode_input_pullup(&DDRD, CLK);
-
-    
-=======
-    //GPIO_mode_input_pullup(&DDRC, DATA);
-    //GPIO_mode_input_pullup(&DDRD, CLK);
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
 
     // Enables interrupts by setting the global interrupt mask
     sei();
@@ -155,14 +162,7 @@ ISR(TIMER1_OVF_vect)
     B_prev = B_curr;
     A_prev = A_curr;
 
-<<<<<<< HEAD
-
-
 }
-
-=======
-}
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
 
 /**********************************************************************
  * Function: ADC complete interrupt
@@ -214,22 +214,18 @@ ISR(ADC_vect)
     lcd_gotoxy(0, 0); 
     lcd_puts(string);
 
-<<<<<<< HEAD
-    
-    sw = GPIO_read(&PIND, BTN);
-    itoa(sw, string, 10);
-    lcd_gotoxy(0, 0); 
-    lcd_puts(string);
-
-=======
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
     sw_p = GPIO_read(&PINC, BTN_p);
     itoa(sw_p, string, 10);
     lcd_gotoxy(0, 1); 
     lcd_puts(string);
-<<<<<<< HEAD
 
-=======
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
+
+
+
+  //uint8_t pwm_out = PWM;
+
+  
+
+  
 
 }
