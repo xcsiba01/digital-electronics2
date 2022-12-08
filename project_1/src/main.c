@@ -19,10 +19,7 @@
 #include <lcd.h>            // Peter Fleury's LCD library
 #include <stdlib.h>         // C library. Needed for number conversions
 #include <uart.h>
-<<<<<<< HEAD
-=======
 
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
 #define BTN 3
 #define BTN_p 3
 #define DATA 2
@@ -79,7 +76,6 @@ int main(void)
     GPIO_mode_input_pullup(&DDRD, BTN);
     GPIO_mode_input_pullup(&DDRC, BTN_p);
 
-<<<<<<< HEAD
     //TIM0_overflow_16ms();
     //TIM1_overflow_interrupt_enable();
 
@@ -87,10 +83,10 @@ int main(void)
     //GPIO_mode_input_pullup(&DDRD, CLK);
 
     
-=======
+
     //GPIO_mode_input_pullup(&DDRC, DATA);
     //GPIO_mode_input_pullup(&DDRD, CLK);
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
+
 
     // Enables interrupts by setting the global interrupt mask
     sei();
@@ -155,14 +151,11 @@ ISR(TIMER1_OVF_vect)
     B_prev = B_curr;
     A_prev = A_curr;
 
-<<<<<<< HEAD
-
 
 }
 
-=======
 }
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
+
 
 /**********************************************************************
  * Function: ADC complete interrupt
@@ -213,23 +206,16 @@ ISR(ADC_vect)
     itoa(sw, string, 10);
     lcd_gotoxy(0, 0); 
     lcd_puts(string);
-
-<<<<<<< HEAD
     
     sw = GPIO_read(&PIND, BTN);
     itoa(sw, string, 10);
     lcd_gotoxy(0, 0); 
     lcd_puts(string);
 
-=======
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
     sw_p = GPIO_read(&PINC, BTN_p);
     itoa(sw_p, string, 10);
     lcd_gotoxy(0, 1); 
     lcd_puts(string);
-<<<<<<< HEAD
 
-=======
->>>>>>> afa7a24d0f5bc3e43bfe45649f029fd4e01096be
 
 }
