@@ -2,8 +2,8 @@
 /* Includes ----------------------------------------------------------*/
 #include "Arduino.h"
 
-static int start = 500;  //0.5ms, pulse width for -90 degrees
-static int end = 2500;   //2.5 ms, pulse width for 0 degrees
+static int start = 500;  //0.5ms, pulse width for 0 degrees
+static int end = 2500;   //2.5 ms, pulse width for 180 degrees
 static int step = 10;    
 static int counter = 0;
 
