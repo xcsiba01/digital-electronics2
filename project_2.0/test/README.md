@@ -97,7 +97,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 
 * Flowchart of the `main()` function:
 
-![your figure](flowchart.PNG)
+![your figure](flowchart.png)
 
 <a name="video"></a>
 
