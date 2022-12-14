@@ -36,7 +36,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 
 #### Schematic of the implementation:
 
-![your figure](schema.png)
+![your figure](schema.PNG)
 
 | **Servo motor 1** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
