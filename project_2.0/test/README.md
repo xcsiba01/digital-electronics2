@@ -42,13 +42,13 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
 | VCC | Positive Power Supply | +5V |
-| PWM | PWM signals | ~D9 (PB1) |
+| PWM | PWM Signals | ~D9 (PB1) |
 
 | **Servo motor 2** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
 | VCC | Positive Power Supply | +5V |
-| PWM | PWM signals | ~D10 (PB2) |
+| PWM | PWM Signals | ~D10 (PB2) |
 
 <a name="software"></a>
 
@@ -85,12 +85,12 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **(0x81)** | ICNC1 | ICES1 | - | WGM13 | WGM12 | CS12 | CS11 | CS10 |
 | **Read/Write** | R/W | R/W | R | R/W | R/W | R/W | R/W | R/W |
 | **Value** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
-| **Description** | input Capture Noise Canceler |  input Capture Edge Select | reserved bit | Waveform Generation Mode | Waveform Generation Mode | Clock Select | Clock Select | Clock Select |
+| **Description** | Input Capture Noise Canceler |  Input Capture Edge Select | Reserved bit | Waveform Generation Mode | Waveform Generation Mode | Clock Select | Clock Select | Clock Select |
 
 * The prescaler (= 8) is defined by bits CS12, CS11, and CS10. 
 * TOP is declared by ICR1, which sets the frequency/time period (50 Hz/20 ms).
 * OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9(OCR1A) and pin 10(OCR1B).
-* In the infinite loop while the counter counts from minimal pulse width to maximum pulse width then vice versa. 
+* In the infinite loop `while` the counter counts from minimal pulse width to maximum pulse width then vice versa. 
 * The two servo motors rotate simultaneously describing a 180° angle.
 
 ![your figure](servo_motor.png)
