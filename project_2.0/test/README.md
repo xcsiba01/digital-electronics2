@@ -87,9 +87,9 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **Value** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
 | **Description** | Input Capture Noise Canceler |  Input Capture Edge Select | Reserved bit | Waveform Generation Mode | Waveform Generation Mode | Clock Select | Clock Select | Clock Select |
 
-* The prescaler (= 8) is defined by bits CS12, CS11, and CS10. 
+* The prescaler (= 8) is defined by bits CS12, CS11 and CS10. 
 * TOP is declared by ICR1, which sets the frequency/time period (50 Hz/20 ms).
-* OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9(OCR1A) and pin 10(OCR1B).
+* OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9 (OCR1A) and pin 10 (OCR1B).
 * In the infinite loop `while` the counter counts from minimal pulse width to maximum pulse width then vice versa. 
 * The two servo motors rotate simultaneously describing a 180° angle.
 
