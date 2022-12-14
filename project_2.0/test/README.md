@@ -94,6 +94,11 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 * The two servo motors rotate simultaneously describing a 180° (resp. 90°) angle.
 
 ![your figure](servo_motor.png)
+
+* Flowchart of the `main()` function:
+
+![your figure](flowchart.PNG)
+
 <a name="video"></a>
 
 ## Video
