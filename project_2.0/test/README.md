@@ -71,12 +71,12 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 * By using registers TCCR1A and TCCR1B we chose the phase correct PWM mode. In this mode Timer 1 counts from a BOTTOM value to a TOP value.
 *  TCCR1A – Timer/Counter1 Control Register A:
 
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **Bit** | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **(0x80)** | COM1A1 | COM1A0 | COM1B1 | COM1B0 | - | - | WGM11 | WGM10 |
 | **Read/Write** | R/W | R/W | R/W | R/W | R | R | R/W | R/W |
 | **Value** | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
-| **Description** | controls pins 9 | controls pin 9 | controls pin 10 | controls pin 10 | - | - | sets PWM phase correct mode | sets PWM phase correct mode |
+| **Description** | controls pins 9 | controls pin 9 | controls pin 10 | controls pin 10 | - | - | sets PWM phase correct mode |
 
 * TOP is defined by ICR1, which sets the frequency/time period (50 Hz/20 ms).
 * OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9(OCR1A) and pin 10(OCR1B).
