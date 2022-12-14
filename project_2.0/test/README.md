@@ -107,5 +107,6 @@ A short video with the practical implementation example of this project is avail
 1. [Arduino Uno Pinout](https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins)
 2. [Servo Motor Basics with Arduino](https://docs.arduino.cc/learn/electronics/servo-motors)
 3. [SG90 Datasheet](https://datasheetspdf.com/pdf-file/791970/TowerPro/SG90/1)
-4. https://www.eprojectszone.com/how-to-control-a-servomotor-without-arduino-servo-library/
+4. [ATmega328P datasheet](https://www.microchip.com/en-us/product/ATmega328p)
+5. https://www.eprojectszone.com/how-to-control-a-servomotor-without-arduino-servo-library/
 
