@@ -76,7 +76,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **(0x80)** | COM1A1 | COM1A0 | COM1B1 | COM1B0 | - | - | WGM11 | WGM10 |
 | **Read/Write** | R/W | R/W | R/W | R/W | R | R | R/W | R/W |
 | **Value** | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
-| **Description** | controls pins 9 | controls pin 9 | controls pin 10 | controls pin 10 | - | - | Waveform Generation Mode | Waveform Generation Mode |
+| **Description** | controls pin 9 | controls pin 9 | controls pin 10 | controls pin 10 | - | - | Waveform Generation Mode | Waveform Generation Mode |
 
 * TCCR1B – Timer/Counter1 Control Register B:
 
@@ -85,10 +85,15 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **(0x81)** | ICNC1 | ICES1 | - | WGM13 | WGM12 | CS12 | CS11 | CS10 |
 | **Read/Write** | R/W | R/W | R | R/W | R/W | R/W | R/W | R/W |
 | **Value** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
-| **Description** | input Capture Noise Canceler |  input Capture Edge Select | reserved bit | Waveform generation mode | Waveform generation mode | Clock Select | Clock Select | Clock Select |
+| **Description** | input Capture Noise Canceler |  input Capture Edge Select | reserved bit | Waveform Generation Mode | Waveform Generation Mode | Clock Select | Clock Select | Clock Select |
 
-* TOP is defined by ICR1, which sets the frequency/time period (50 Hz/20 ms).
+* The prescaler (= 8) is defined by bits CS12, CS11, and CS10. 
+* TOP is declared by ICR1, which sets the frequency/time period (50 Hz/20 ms).
 * OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9(OCR1A) and pin 10(OCR1B).
+* In the infinite loop while the counter counts from minimal pulse width to maximum pulse width then vice versa. 
+* The two servo motors rotate simultaneously describing a 180° angle.
+
+![your figure](servo_motor_sg90.PNG)
 <a name="video"></a>
 
 ## Video
