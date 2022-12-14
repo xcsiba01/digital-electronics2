@@ -93,7 +93,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 * In the infinite loop while the counter counts from minimal pulse width to maximum pulse width then vice versa. 
 * The two servo motors rotate simultaneously describing a 180° angle.
 
-![your figure](servo_motor_sg90.PNG)
+![your figure](servo_motor_sg90.png)
 <a name="video"></a>
 
 ## Video
@@ -108,5 +108,4 @@ A short video with the practical implementation example of this project is avail
 2. [Servo Motor Basics with Arduino](https://docs.arduino.cc/learn/electronics/servo-motors)
 3. [SG90 Datasheet](https://datasheetspdf.com/pdf-file/791970/TowerPro/SG90/1)
 4. https://www.eprojectszone.com/how-to-control-a-servomotor-without-arduino-servo-library/
-5. 
 
