@@ -91,7 +91,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 * TOP is declared by ICR1, which sets the frequency/time period (50 Hz/20 ms).
 * OCR1A and OCR1B registers are controlling the duty cycles of the PWM signals for pin 9 (OCR1A) and pin 10 (OCR1B).
 * In the infinite loop `while` the counter counts from minimal pulse width to maximum pulse width then vice versa. 
-* The two servo motors rotate simultaneously describing a 180° angle.
+* The two servo motors rotate simultaneously describing a 180° (resp. 90°) angle.
 
 ![your figure](servo_motor.png)
 <a name="video"></a>
