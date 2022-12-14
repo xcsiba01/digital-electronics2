@@ -93,7 +93,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 * In the infinite loop while the counter counts from minimal pulse width to maximum pulse width then vice versa. 
 * The two servo motors rotate simultaneously describing a 180° angle.
 
-![your figure](servo_motor_sg90.png)
+![your figure](servo_motor.png)
 <a name="video"></a>
 
 ## Video
