@@ -41,14 +41,14 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **Servo motor 1** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
-| +5V | Positive Power Supply | +5V |
-| PWM | ADC channel | ~D9 (PB1) |
+| VCC | Positive Power Supply | +5V |
+| PWM | PWM signals | ~D9 (PB1) |
 
 | **Servo motor 2** | **Description** | **Arduino uno pin** |
 | :-: | :-: | :-: |
 | GND | Power Supply Ground | GND |
-| +5V | Positive Power Supply | +5V |
-| PWM | Analog Input (Push Button) | ~D10 (PB2) |
+| VCC | Positive Power Supply | +5V |
+| PWM | PWM signals | ~D10 (PB2) |
 
 <a name="software"></a>
 
