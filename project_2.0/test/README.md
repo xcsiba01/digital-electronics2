@@ -63,7 +63,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 | **Variable** | **Value** | **Description** |
 | :-: | :-: | :-: |
 | `static int start` | `500` | start PWM pulse width, 0.5 ms corresponds to the 0° of rotation |
-| `static int end` | `1500` or `2500` | final PWM pulse width, 1.5 ms (resp. 2.5 ms) corresponds to the 0° (resp. 180°) of rotation |
+| `static int end` | `1500` or `2500` | final PWM pulse width, 1.5 ms (resp. 2.5 ms) corresponds to the 90° (resp. 180°) of rotation |
 | `static int step` | `10` | step value used in the `for` cycle |
 | `static int counter` | `0` | counter, for changing the pulse widths in the infinite loop |
 
