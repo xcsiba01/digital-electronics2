@@ -103,7 +103,7 @@ Precise generation of several PWM channels. Application of two (or more) Servo m
 
 ## Video
 
-A short video with the practical implementation example of this project is available right [here]().
+A short video with the practical implementation example of this project is available right [here](https://www.youtube.com/watch?v=aQqeJJa2FqU).
 
 <a name="references"></a>
 
